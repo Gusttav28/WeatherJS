@@ -1,0 +1,17 @@
+body {
+    background-color: #000000;
+    color: white;
+}
+
+.display-flex{
+    display: flex;
+    
+}
+
+.margin{
+    margin: 2%;
+}
+
+.center-items{
+    justify-content: center;
+}
