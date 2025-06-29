@@ -1,4 +1,4 @@
-import { getting_getPlace_API } from "./app.js";
+import { getting_getPlace_API, getting_getWeather_API } from "./app.js";
 
 am5.ready(function() {
         
@@ -54,24 +54,49 @@ polygonSeries.mapPolygons.template.states.create("active", {
 });
 
 var previousPolygon;
+// function inputCountry(name){
+//     const name = name
+//     polygonSeries.mapPolygons.each(function(polygon){
+//         const countryData = target.dataItem.dataContext.name
+//         if (previousPolygon && previousPolygon != polygon){
+//             previousPolygon.set("active", false)
+//         }
+//     } )
+// }
 
 polygonSeries.mapPolygons.template.on("active", async function (active, target) {
+    // this variable call countryData is to get the name of the country that is currently selected
     const countryData = target.dataItem.dataContext.name
     if (previousPolygon && previousPolygon != target) {
         previousPolygon.set("active", false);
     }
+    // this if conditional over here represent the click from the user in the map
     if (target.get("active")) {
+        // this polygonSeries.zoomToDataItem produce a zoom in the map just if this one is currently active
         polygonSeries.zoomToDataItem(target.dataItem);
-        await getting_getPlace_API(countryData)
+
+        // the variable result gets the json from the functin getting_getPlace_API and need the paramater from countryData
+        // this variable return a list with the information of now the place that is currently selected
+        // const result = await getting_getPlace_API(countryData)
+        await getting_getWeather_API(countryData)
+        // this console.log print the country that is currently selected
         console.log(countryData)
+
+        // this variable make the instance of modal from bootstrap
+        const myModal = new bootstrap.Modal(document.getElementById('countryModal'));
+        // const myModal2 = new bootstrap.Modal(document.getElementById('countryModal2'));
+        myModal.show();
+
     }
     else {
-        chart.goHome();
+        chart.goHome()
     }
+
     previousPolygon = target;
 });
 
-// polygonSeries.mapPolygons.template.on("click", function(ev){
+
+// polygonSeries.mapPolygons.template.off("click", function(ev){
 //     var dataItem = ev.target.dataItem.dataContext;
 //     console.log("Country Name: " + dataItem.name)
 // });

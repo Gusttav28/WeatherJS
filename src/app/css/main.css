@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-image: url("/assets/backgroundYellow2.jpg");  
+    background-image: url("/assets/backgroundYellow3.jpg");  
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -66,8 +66,8 @@ body {
     height: 1115px;
   }     
   .margin{
-    margin-left: 40%;
-    margin-bottom: -15%;
+    margin-right: 24%;
+    margin-bottom: -20%;
 }   
 }
 
@@ -102,3 +102,87 @@ body {
     justify-content: center;
 }
 
+
+.modal {
+    display: none; /* Hidden by default */
+    position: center;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 10%;
+    height: 10%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 12px;
+    width: 10%;
+    text-align: center;
+  }
+  
+  .close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+  }
+
+
+.parent {
+  container-name: myContainer;
+  container-type: inline-size;
+}
+
+
+@container myContainer (width < 500px) {
+  .child {
+    width: 200px;  
+    background-color: rgb(156, 151, 151);
+    border-radius: 35px;
+    padding: 20px;
+  }
+  .child2 {
+    width: 200px;  
+    /* background-color: rgb(156, 151, 151); */
+    border-radius: 35px;
+    padding: 20px;
+    margin-left: 120px;
+  }
+}
+
+.marginParent{
+  margin-top: 10px;
+}
+
+.marginParentButtn{
+  margin-bottom: 10px;
+}
+
+.marginLeftDiv{
+  margin-left: 20px;
+}
+
+.marginLeft{
+  margin-left: 280px;
+}
+
+.roundeed{
+  border-radius: 45px
+}
+
+.margin-top-tempeture{
+  margin-top: -40px;
+}
+
+.marginTempetureButton{
+  margin-bottom: 10px;
+}
+
+.marginCountryButton{
+  margin-top: 25px;
+  margin-left: 20px;
+}
