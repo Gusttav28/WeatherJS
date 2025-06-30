@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 
 body {
     /* overflow-y: hidden; */
@@ -40,12 +42,92 @@ body {
         margin-left: 20%;
         margin-bottom: -5%;
     }
+    .roundeed{
+      border-radius: 45px;
+      padding: 20px;
+    }
+    
+    .margin-top-tempeture{
+      margin-top: -40px;
+    }
+    
+    .marginTempeture{
+      margin-bottom: 4px;
+    }
+    
+    .marginCountry{
+      margin-top: 22px;
+    }
+    
+    .marginCountryTempeture{
+      margin-left: -80px;
+    }
+    
+    .windMargin{
+      margin-left: 10px;
+    }
+    
+    .marginData{
+      margin-right: -20px;
+    }
+    .divIcons{
+      width: fit-content;
+    }
 }
 @media screen and (min-width: 400px) {
 
     #chartdiv {
         width: 800px;
         height: 800px;
+      }
+      .marginParent{
+        margin-top: 10px;
+      }
+      
+      .marginParentButtn{
+        margin-bottom: 10px;
+      }
+      
+      .marginLeftDiv{
+        margin-left: 20px;
+      }
+      
+      .marginLeft{
+        margin-left: 280px;
+      }
+      
+      .roundeed{
+        border-radius: 45px;
+        padding: 20px;
+      }
+      
+      .margin-top-tempeture{
+        margin-top: -40px;
+      }
+      
+      .marginTempeture{
+        margin-bottom: 4px;
+        margin-left: 10px;
+      }
+      
+      .marginCountry{
+        margin-top: 22px;
+      }
+      
+      .marginCountryTempeture{
+        margin-left: 20px;
+      }
+      
+      .windMargin{
+        margin-right: 40px;
+      }
+      
+      .marginData{
+        margin-right: 35px;
+        margin-top: 5px;
+      }
+      .divIcons{
+        width: fit-content;
       }
 }
 
@@ -58,6 +140,56 @@ body {
         margin-left: 40%;
         margin-bottom: -15%;
     }   
+    .marginParent{
+      margin-top: 10px;
+    }
+    
+    .marginParentButtn{
+      margin-bottom: 10px;
+    }
+    
+    .marginLeftDiv{
+      margin-left: 20px;
+    }
+    
+    .marginLeft{
+      margin-left: 280px;
+    }
+    
+    .roundeed{
+      border-radius: 45px;
+      padding: 20px;
+    }
+    
+    .margin-top-tempeture{
+      margin-top: -40px;
+    }
+    
+    .marginTempeture{
+      margin-bottom: 4px;
+      margin-left: 10px;
+    }
+    
+    .marginCountry{
+      margin-top: 22px;
+    }
+    
+    .marginCountryTempeture{
+      margin-left: 20px;
+    }
+    
+    .windMargin{
+      margin-right: 40px;
+    }
+    
+    .marginData{
+      margin-right: 35px;
+      margin-top: 5px;
+    }
+    .divIcons{
+      width: fit-content;
+    }
+    
 }
 
 @media screen and (min-width: 1400px) {
@@ -69,6 +201,56 @@ body {
     margin-right: 24%;
     margin-bottom: -20%;
 }   
+
+.marginParent{
+  margin-top: 10px;
+}
+
+.marginParentButtn{
+  margin-bottom: 10px;
+}
+
+.marginLeftDiv{
+  margin-left: 20px;
+}
+
+.marginLeft{
+  margin-left: 280px;
+}
+
+.roundeed{
+  border-radius: 45px;
+  padding: 20px;
+}
+
+.margin-top-tempeture{
+  margin-top: -40px;
+}
+
+.marginTempeture{
+  margin-bottom: 4px;
+  margin-left: 10px;
+}
+
+.marginCountry{
+  margin-top: 22px;
+}
+
+.marginCountryTempeture{
+  margin-left: 20px;
+}
+
+.windMargin{
+  margin-right: 40px;
+}
+
+.marginData{
+  margin-right: 35px;
+  margin-top: 5px;
+}
+.divIcons{
+  width: fit-content;
+}
 }
 
 
@@ -141,7 +323,7 @@ body {
 @container myContainer (width < 500px) {
   .child {
     width: 200px;  
-    background-color: rgb(156, 151, 151);
+    background-color: rgb(56, 56, 63);
     border-radius: 35px;
     padding: 20px;
   }
@@ -171,18 +353,32 @@ body {
 }
 
 .roundeed{
-  border-radius: 45px
+  border-radius: 45px;
+  padding: 20px;
 }
 
 .margin-top-tempeture{
   margin-top: -40px;
 }
 
-.marginTempetureButton{
-  margin-bottom: 10px;
+.marginTempeture{
+  margin-bottom: 4px;
+  margin-left: 10px;
 }
 
-.marginCountryButton{
-  margin-top: 25px;
+.marginCountry{
+  margin-top: 22px;
+}
+
+.marginCountryTempeture{
   margin-left: 20px;
+}
+
+.windMargin{
+  margin-right: 40px;
+}
+
+.marginData{
+  margin-right: 35px;
+  margin-top: 5px;
 }

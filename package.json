@@ -11,6 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.3.7"
+    "@tailwindcss/cli": "^4.1.11",
+    "bootstrap": "^5.3.7",
+    "tailwindcss": "^4.1.11"
   }
 }
