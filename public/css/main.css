@@ -32,6 +32,7 @@ body {
     right: -200px;
     transform: translateX(3%);
     transform: translateY(24%);
+    /* animation: spin 30s linear infinite; */
   }
 
 .margin{
