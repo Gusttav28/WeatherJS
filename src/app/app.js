@@ -17,6 +17,9 @@ const windHTML = document.getElementById("windHTML")
 const humidityHTML = document.getElementById("humidityHTML")
 const uvIndexHTML = document.getElementById("uvIndexHTML")
 const conditionHTML = document.getElementById("conditionHTML")
+const localtime_label = document.getElementById("localtime")
+const seachButton = document.getElementById("searchButton")
+const inputCountry = document.getElementById("inputCountry")
 
 const divjson1 = document.getElementById("jsonInfo1")
 const divjson2 = document.getElementById("jsonInfo2")
@@ -101,6 +104,8 @@ export async function getting_getPlace_API(mapValue) {
     
 }
 
+
+
 export async function getting_getWeather_API(mapValue) {
     // const inputValue = input_getWeather.value;
     // console.log(inputValue)
@@ -119,9 +124,10 @@ export async function getting_getWeather_API(mapValue) {
         const uvIndex = result.current.uv
         const condition = result.current.condition.text
         
-        countryList.push(location, region, lat, lon, localtime, tempeture, wind_kph, humidity)
+        countryList.push(location, region, lat, lon, localtime, tempeture, wind_kph, humidity, uvIndex, condition)
         console.log(result)
 
+        localtime_label.innerHTML = localtime
         countryModalLabel.innerHTML = country
         tempetureHTML.innerHTML = `${tempeture}°`
         windHTML.innerHTML = `${wind_kph} km/h`
@@ -142,7 +148,6 @@ export async function getting_getWeather_API(mapValue) {
         else if(uvIndex > 12){
             uvIndexHTML.innerHTML = `${uvIndex} Extreme`
         }
-
         conditionHTML.innerHTML = condition
 
 
@@ -165,6 +170,17 @@ export async function getting_getAstronomy_API() {
         console.log("this is the err " + error)
     }
 }
+
+// seachButton.addEventListener('click', async function(e) {
+//     e.preventDefault()
+//     const resutInput = inputCountry.value
+//     try {
+//         const result = await getting_getWeather_API(resutInput) 
+//         return result       
+//     } catch (error) {
+//         alert("There's some error ", error)
+//     }
+// })
 
 // button.addEventListener('click', async function(event) {
 //     event.preventDefault();

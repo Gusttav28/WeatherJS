@@ -63,6 +63,17 @@ var previousPolygon;
 //         }
 //     } )
 // }
+function showLoader2() {
+    const loadingMap = document.getElementById("loadingMap")
+    loadingMap.style.display = 'block'
+    
+    setTimeout(() => {
+        loadingMap.style.display = "none"
+        const myModal = new bootstrap.Modal(document.getElementById('countryModal'));
+        myModal.show();
+    }, 1000);
+}
+
 
 polygonSeries.mapPolygons.template.on("active", async function (active, target) {
     // this variable call countryData is to get the name of the country that is currently selected
@@ -74,18 +85,19 @@ polygonSeries.mapPolygons.template.on("active", async function (active, target) 
     if (target.get("active")) {
         // this polygonSeries.zoomToDataItem produce a zoom in the map just if this one is currently active
         polygonSeries.zoomToDataItem(target.dataItem);
-
+        
         // the variable result gets the json from the functin getting_getPlace_API and need the paramater from countryData
         // this variable return a list with the information of now the place that is currently selected
         // const result = await getting_getPlace_API(countryData)
         await getting_getWeather_API(countryData)
         // this console.log print the country that is currently selected
         console.log(countryData)
-
+        
         // this variable make the instance of modal from bootstrap
-        const myModal = new bootstrap.Modal(document.getElementById('countryModal'));
+        // const myModal = new bootstrap.Modal(document.getElementById('countryModal'));
         // const myModal2 = new bootstrap.Modal(document.getElementById('countryModal2'));
-        myModal.show();
+        showLoader2()
+        // myModal.show();
 
     }
     else {

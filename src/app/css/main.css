@@ -52,26 +52,50 @@ body {
     }
     
     .marginTempeture{
-      margin-bottom: 4px;
+      margin-bottom: 1px;
+      margin-left: 90px;
+      width: fit-content;
     }
     
     .marginCountry{
       margin-top: 22px;
+      margin-left: 10px;
+      width: fit-content;
     }
     
     .marginCountryTempeture{
-      margin-left: -80px;
+      width: fit-content;
     }
     
     .windMargin{
       margin-left: 10px;
+      font-size: small;
     }
     
     .marginData{
-      margin-right: -20px;
+      margin-left: 20px;
+      width: fit-content;
     }
     .divIcons{
       width: fit-content;
+      margin-left: 6px;
+    }
+    .top{
+      margin-top: 3px;
+    }
+    .dataLowTop{
+      margin-top: 10px;
+    }
+    .country-content{
+      width: fit-content;
+    }
+    .condition-content{
+      width: fit-content;
+    }
+
+    /* -------Modal 2 ------- */
+    .inputModal{
+      margin-left: -650px;
     }
 }
 @media screen and (min-width: 400px) {
@@ -129,6 +153,8 @@ body {
       .divIcons{
         width: fit-content;
       }
+
+      /* -------Modal 2 ------- */
 }
 
 @media screen and (min-width: 1200px) {
@@ -189,6 +215,11 @@ body {
     .divIcons{
       width: fit-content;
     }
+
+    /* -------Modal 2 ------- */
+    .inputModal{
+      margin-left: 200px;
+    }
     
 }
 
@@ -229,11 +260,12 @@ body {
 
 .marginTempeture{
   margin-bottom: 4px;
-  margin-left: 10px;
+  left: 300px;
 }
 
 .marginCountry{
   margin-top: 22px;
+  width: fit-content;
 }
 
 .marginCountryTempeture{
@@ -250,6 +282,10 @@ body {
 }
 .divIcons{
   width: fit-content;
+}
+/* -------Modal 2 ------- */
+.inputModal{
+  margin-left: 100px;
 }
 }
 
@@ -332,7 +368,8 @@ body {
     /* background-color: rgb(156, 151, 151); */
     border-radius: 35px;
     padding: 20px;
-    margin-left: 120px;
+    margin-left: 105px;
+    padding-right: 80px;
   }
 }
 
@@ -381,4 +418,11 @@ body {
 .marginData{
   margin-right: 35px;
   margin-top: 5px;
+}
+
+
+/* -------------Modal 2------------------------ */
+
+.inputModal{
+  margin-left: 100px;
 }
