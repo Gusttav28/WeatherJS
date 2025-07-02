@@ -1,4 +1,4 @@
-import { getting_getPlace_API, getting_getPlace_API_Input, getting_getWeather_API } from "../app.js";
+import { getting_getPlace_API, getting_getPlace_API_Input, getting_getWeather_API } from "./app.js";
 
 const input_getPlace = document.getElementById("inputPlace")
 const seachButton_modal2 = document.getElementById("seachButton_modal2")
