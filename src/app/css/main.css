@@ -92,13 +92,23 @@ body {
     .condition-content{
       width: fit-content;
     }
+    .marginIconsDiv{
+      height: 150px;
+      width: 150px;
+      transform: translateX(-350%)
+    }
+    .marginLabel{
+      margin-left: 60px;
+      transform: translateY(-515%);
+    }
+    
 
     /* -------Modal 2 ------- */
     .inputModal{
       margin-left: -650px;
     }
 }
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 430px) {
 
     #chartdiv {
         width: 800px;
@@ -153,9 +163,95 @@ body {
       .divIcons{
         width: fit-content;
       }
+      .marginIconsDiv{
+        margin-left: 700px;
+        height: 150px;
+        width: 150px;
+        transform: translateX(-340%)
+      }
+      .marginLabel{
+        left: -1800px;
+        margin-top: -400px;
+        transform: translateY(-10%);
+        /* transform: translateX(-203%); */
+      }
+      
 
       /* -------Modal 2 ------- */
 }
+@media screen and (min-width: 480px) {
+
+    #chartdiv {
+        width: 800px;
+        height: 800px;
+      }
+      .marginParent{
+        margin-top: 10px;
+      }
+      
+      .marginParentButtn{
+        margin-bottom: 10px;
+      }
+      
+      .marginLeftDiv{
+        margin-left: 20px;
+      }
+      
+      .marginLeft{
+        margin-left: 280px;
+      }
+      
+      .roundeed{
+        border-radius: 45px;
+        padding: 20px;
+      }
+      
+      .margin-top-tempeture{
+        margin-top: -40px;
+      }
+      
+      .marginTempeture{
+        margin-bottom: 4px;
+        margin-left: 10px;
+      }
+      
+      .marginCountry{
+        margin-top: 22px;
+      }
+      
+      .marginCountryTempeture{
+        margin-left: 20px;
+      }
+      
+      .windMargin{
+        margin-right: 40px;
+      }
+      
+      .marginData{
+        margin-right: 35px;
+        margin-top: 5px;
+      }
+      .divIcons{
+        width: fit-content;
+      }
+      .marginIconsDiv{
+        margin-left: 700px;
+        height: 150px;
+        width: 150px;
+        transform: translateX(-320%)
+      }
+      .marginLabel{
+        text-align: justify;
+        margin-top: 200px;
+        /* margin-top: -400px; */
+        /* transform: translateY(-10%); */
+        transform: translateX(-703px);
+      }
+      
+
+      /* -------Modal 2 ------- */
+}
+
 
 @media screen and (min-width: 1200px) {
     #chartdiv {
@@ -220,6 +316,17 @@ body {
     .inputModal{
       margin-left: 200px;
     }
+    .marginIconsDiv{
+      margin-left: 900px;
+      height: 150px;
+      width: 150px;
+      transform: translateX(-55%)
+    }
+    .marginLabel{
+      margin-left: 100px;
+      transform: translateX(-900%);
+    }
+    
     
 }
 
@@ -287,6 +394,18 @@ body {
 .inputModal{
   margin-left: 100px;
 }
+.marginIconsDiv{
+  margin-left: 900px;
+  height: 150px;
+  width: 150px;
+  transform: translateX(5%)
+}
+.marginLabel{
+  margin-left: 110px;
+  margin-bottom: 20%;
+  transform: translateY(-800%);
+}
+
 }
 
 
@@ -420,6 +539,16 @@ body {
   margin-top: 5px;
 }
 
+.marginIconsDiv{
+  margin-left: 700px;
+  height: 150px;
+  width: 150px;
+}
+.marginLabel{
+  margin-left: 660px;
+  transform: translateY(-515%);
+}
+
 
 /* -------------Modal 2------------------------ */
 
@@ -427,4 +556,39 @@ body {
   margin-left: 100px;
 }
 
+@keyframes wipe-in-left {
+  from {
+  clip-path: inset(0 0 0 100%);
+  }
+  to {
+  clip-path: inset(0 0 0 0);
+  }
+}
 
+[transition-style="in:wipe:left"] {
+  animation: 8.5s cubic-bezier(.25, 1, .30, 1) wipe-in-left both;
+}
+
+@keyframes wipe-in-up {
+  from {
+      clip-path:inset(100% 0 0 0)
+  }
+  to {
+      clip-path:inset(0 0 0 0)
+  }
+}
+[transition-style="in:wipe:up"] {
+  animation:2.5s cubic-bezier(.25,1,.3,1) both wipe-in-up
+}
+
+@keyframes wipe-in-right {
+  from {
+      clip-path:inset(0 100% 0 0%)
+  }
+  to {
+      clip-path:inset(0 0 0 0)
+  }
+}
+[transition-style="in:wipe:right"] {
+  animation:8.5s cubic-bezier(.25,1,.3,1) both wipe-in-right
+}
