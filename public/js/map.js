@@ -1,8 +1,7 @@
 import { getting_getPlace_API, getting_getWeather_API } from "./app.js";
 
 am5.ready(function() {
-
-
+        
 // Create root element
 // https://www.amcharts.com/docs/v5/getting-started/#Root_element
 var root = am5.Root.new("chartdiv");
@@ -31,8 +30,6 @@ chart.chartContainer.events.off("wheel");
 // Lock zoom level to 1
 chart.set("minZoomLevel", 1);
 chart.set("maxZoomLevel", 1);
-
-
 
 
 // Create main polygon series for countries
@@ -126,6 +123,8 @@ polygonSeries.mapPolygons.template.on("active", async function (active, target) 
 chart.chartContainer.get("background").events.on("click", function () {
     chart.goHome();
 })
+
+  
 
 // Make stuff animate on load
 chart.appear(1000, 100);
