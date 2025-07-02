@@ -34,10 +34,10 @@ chart.set("minZoomLevel", 1);
 chart.set("maxZoomLevel", 1);
 
 
-chart.chartContainer.setAll({
-    interactive: true,
-    draggable: true
-  });
+// chart.chartContainer.setAll({
+//     interactive: true,
+//     draggable: true
+//   });
 
 
 // Create main polygon series for countries
@@ -132,21 +132,21 @@ chart.chartContainer.get("background").events.on("click", function () {
     chart.goHome();
 })
 
-let isDragging = false;
-let startX, startY;
-let currentRotationX = 0;
-let currentRotationY = 0;
+// let isDragging = false;
+// let startX, startY;
+// let currentRotationX = 0;
+// let currentRotationY = 0;
 
 
-chart.chartContainer.events.on("pointerdown", function(ev) {
-    isDragging = true;
-    startX = ev.pointer.x;
-    startY = ev.pointer.y;
-  });
+// chart.chartContainer.events.on("pointerdown", function(ev) {
+//     isDragging = true;
+//     startX = ev.pointer.x;
+//     startY = ev.pointer.y;
+//   });
   
-  chart.chartContainer.events.on("pointerup", function(ev) {
-    isDragging = false;
-  });
+//   chart.chartContainer.events.on("pointerup", function(ev) {
+//     isDragging = false;
+//   });
   
 //   chart.chartContainer.events.on("globalpointermove", function(ev) {
 //     if (isDragging) {
