@@ -23,9 +23,9 @@ var chart = root.container.children.push(am5map.MapChart.new(root, {
 }));
 // chart.chartContainer.events.off("wheel");
 // Remove interaction events
-// chart.chartContainer.events.off("wheel");
-// chart.chartContainer.events.off("pinch");
-// chart.chartContainer.events.off("doublehit");
+chart.chartContainer.events.off("wheel");
+chart.chartContainer.events.off("pinch");
+chart.chartContainer.events.off("doublehit");
 
 // Lock zoom level to 1
 chart.set("minZoomLevel", 1);
