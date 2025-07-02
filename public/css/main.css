@@ -13,14 +13,6 @@ body {
     background-attachment: fixed;
     size: 200px;
 }
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 #chartdiv {
     width: 1115px;
     height: 1115px;
@@ -32,7 +24,6 @@ body {
     right: -200px;
     transform: translateX(3%);
     transform: translateY(24%);
-    /* animation: spin 30s linear infinite; */
   }
 
 .margin{
