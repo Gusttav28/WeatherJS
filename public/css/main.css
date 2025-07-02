@@ -13,7 +13,14 @@ body {
     background-attachment: fixed;
     size: 200px;
 }
-
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 #chartdiv {
     width: 1115px;
     height: 1115px;
@@ -33,7 +40,14 @@ body {
 }
 
 @media screen and (min-width: 300px) {
-
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
     #chartdiv {
         width: 600px;
         height: 600px;
@@ -109,7 +123,14 @@ body {
     }
 }
 @media screen and (min-width: 430px) {
-
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
     #chartdiv {
         width: 800px;
         height: 800px;
@@ -180,7 +201,14 @@ body {
       /* -------Modal 2 ------- */
 }
 @media screen and (min-width: 480px) {
-
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
     #chartdiv {
         width: 800px;
         height: 800px;
