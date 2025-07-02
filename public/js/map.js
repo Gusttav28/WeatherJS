@@ -20,8 +20,7 @@ root.setThemes([
 var chart = root.container.children.push(am5map.MapChart.new(root, {
     panX: "rotateX",
     panY:"rotateY",
-    projection: am5map.geoOrthographic(),
-    pinchZoom: true
+    projection: am5map.geoOrthographic()
 }));
 chart.chartContainer.events.off("wheel");
 // Remove interaction events
