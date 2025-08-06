@@ -1,4 +1,4 @@
-## WeatherJS
+# WeatherJS
 WeatherJS is the frontend implementation of a weather application powered by a Django REST Framework (DRF) backend. The main objective of this project is to practice and enhance frontend development skills using vanilla JavaScript, HTML, and CSS, while consuming a custom weather API made it with DRF. The project also integrates amCharts 5 (am5) for dynamic and interactive data visualization, enabling a better user experience through real-time chart rendering of weather-related data.
 
 🌐 Live Demo
@@ -11,10 +11,10 @@ The Django REST Framework (DRF) backend used for this project is available in th
 
 👉 [Weather API - DRF Backend] (https://github.com/Gusttav28/Django-Weather-API) remember to run this project first in your local host in order to have the backend server available.
 
-# Project Objective
+## 🚀 Project Objective
 This project was created to strengthen the understanding of how frontend technologies interact with RESTful APIs. It focuses not only on fetching and displaying data, but also on presenting it in an intuitive and user-friendly way using modern visualization libraries.
 
-#Features
+## 🧩 Features
 - Integration with a Django REST Framework weather API.
 
 - Fetch and display real-time weather data (e.g., temperature, humidity, wind speed).
@@ -25,7 +25,7 @@ This project was created to strengthen the understanding of how frontend technol
 
 - Clear code structure designed for scalability and further integration (e.g., Next.js version).
 
-# Technologies Used
+## 🛠 Technologies Used
 - Frontend: JavaScript (Vanilla), HTML5, CSS3
 
 - Visualization: amCharts 5
@@ -34,7 +34,7 @@ This project was created to strengthen the understanding of how frontend technol
 
 - API Communication: Fetch API using JSON responses
 
-# How to Run the Project
+## How to Run the Project
 - Make sure the Django REST API is running and accessible.
 
 - Clone this repository and open the index.html file in your browser, or serve it using a local web server.
@@ -42,7 +42,7 @@ This project was created to strengthen the understanding of how frontend technol
 - The application will automatically fetch data from the API and render it visually using amCharts.
 
 
-# Future Plans
+## 🧪 Future Plans
 - Build an alternative frontend using React and Next.js for comparison and practice.
 
 - Add user location-based weather fetching.
@@ -51,10 +51,10 @@ This project was created to strengthen the understanding of how frontend technol
 
 - Add support for additional metrics such as air quality and UV index.
 
-## Conclusion
+# Conclusion
 WeatherJS is a simple yet effective project to explore API consumption and frontend development with JavaScript. With the integration of amCharts 5, it also provides a strong foundation for building visually rich applications. It serves as both a learning resource and a base for more advanced weather tracking platforms.
 
-## 👨🏻‍💻 About Me
+# 👨🏻‍💻 About Me
 
 If you want to learn more about my work or get in touch, you can find me here:
 
