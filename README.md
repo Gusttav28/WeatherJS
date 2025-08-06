@@ -34,7 +34,7 @@ This project was created to strengthen the understanding of how frontend technol
 
 - API Communication: Fetch API using JSON responses
 
-## How to Run the Project
+## ▶️ How to Run the Project
 - Make sure the Django REST API is running and accessible.
 
 - Clone this repository and open the index.html file in your browser, or serve it using a local web server.
