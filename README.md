@@ -4,12 +4,12 @@ WeatherJS is the frontend implementation of a weather application powered by a D
 🌐 Live Demo
 You can access the deployed version of the project at the following link:
 
-👉 [Live Weather App] (https://weather-bygus.vercel.app/)
+👉 [Live Weather App](https://weather-bygus.vercel.app/)
 
 🗂 Backend Repository
 The Django REST Framework (DRF) backend used for this project is available in the following repository:
 
-👉 [Weather API - DRF Backend] (https://github.com/Gusttav28/Django-Weather-API) remember to run this project first in your local host in order to have the backend server available.
+👉 [Weather API - DRF Backend](https://github.com/Gusttav28/Django-Weather-API) remember to run this project first in your local host in order to have the backend server available.
 
 ## 🚀 Project Objective
 This project was created to strengthen the understanding of how frontend technologies interact with RESTful APIs. It focuses not only on fetching and displaying data, but also on presenting it in an intuitive and user-friendly way using modern visualization libraries.
