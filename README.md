@@ -49,7 +49,7 @@ This project was created to strengthen the understanding of how frontend technol
 
 - Improve UI design with a focus on accessibility and responsiveness.
 
-= Add support for additional metrics such as air quality and UV index.
+- Add support for additional metrics such as air quality and UV index.
 
 ## Conclusion
 WeatherJS is a simple yet effective project to explore API consumption and frontend development with JavaScript. With the integration of amCharts 5, it also provides a strong foundation for building visually rich applications. It serves as both a learning resource and a base for more advanced weather tracking platforms.
