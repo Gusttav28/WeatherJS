@@ -54,6 +54,9 @@ This project was created to strengthen the understanding of how frontend technol
 ## Conclusion
 WeatherJS is a simple yet effective project to explore API consumption and frontend development with JavaScript. With the integration of amCharts 5, it also provides a strong foundation for building visually rich applications. It serves as both a learning resource and a base for more advanced weather tracking platforms.
 
+## 👨🏻‍💻 About Me
 
-Conclusion
-WeatherJS is a simple yet effective project to explore API consumption and frontend development with JavaScript. With the integration of amCharts 5, it also provides a strong foundation for building visually rich applications. It serves as both a learning resource and a base for more advanced weather tracking platforms.
+If you want to learn more about my work or get in touch, you can find me here:
+
+- 🌐[My personal Website](https://your-website.com)  
+- 💼[LinkedIn](https://www.linkedin.com/in/your-username)
