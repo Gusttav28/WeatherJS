@@ -58,5 +58,5 @@ WeatherJS is a simple yet effective project to explore API consumption and front
 
 If you want to learn more about my work or get in touch, you can find me here:
 
-- 🌐 [My personal Website](https://your-website.com)  
-- 💼 [LinkedIn](https://www.linkedin.com/in/your-username)
+- 🌐 [My personal Website](https://www.gustavocamacho.net)  
+- 💼 [LinkedIn](https://www.linkedin.com/in/gustavo-camacho-b9a64b243/)
